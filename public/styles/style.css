@@ -1,0 +1,137 @@
+html {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#home-background {
+    height:100vh;
+    width: 100vw;
+    background-image: url(/images/spotify-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: #fa6862;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+nav img {
+    width: 40px;
+}
+
+.layout-main {
+    margin: 80px;
+}
+
+
+#search-form {
+    background-color: rgba(255,255,255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 100px;
+}
+
+#search-form > input {
+    width: 400px; 
+    line-height: 1.8rem;
+
+}
+
+#search-form > button {
+    all: unset;
+    background-color: #fa6862;
+    color: white;
+    padding: 5px;
+    
+}
+
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+} 
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-gap: 30px;
+  }
+
+.artist-card {
+    width: 300px; 
+    height: 420px; 
+    overflow: hidden;
+    background: #4d4d4d;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.card-img-container {
+    height: 300px;
+    width:300px;
+    
+}
+.card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.card-subline {
+    background: #4d4d4d;
+    color: white;
+}
+.artist-title {
+    font-weight: bold;
+    min-height: 42px;
+}
+.button-red {
+    background-color: #fa6862;
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+    text-decoration: none;
+}
+.tracklist-container {
+    display: flex;
+    justify-content: center;
+}
+
+th {
+    background-color: #4d4d4d;
+    color:white;
+    font-size: 2rem;
+}
+.title-length {
+    min-width: 500px;
+}
+.td {
+    background-color: rgb(192,194,195, 0.5);
+}

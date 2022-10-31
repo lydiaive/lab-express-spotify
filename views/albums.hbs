@@ -1,0 +1,21 @@
+<main class="layout-main">
+    <h1>Albums:</h1>
+    <section class="card-list">
+    {{#each albumList}}
+        <div class="artist-card">
+            <div class="card-img-container">
+                {{#if this.images.0.url}}
+                <img class="card-img" src="{{this.images.0.url}}" alt="Album Image">
+                {{/if}}
+                {{#unless this.images.0.url}}
+                    <img class="card-img" src="/images/1548784.png" alt="No Image found">
+                {{/unless}}
+            </div>
+            <div class="card-subline">
+                <p class="artist-title">{{this.name}}</p>
+                <a class="button-red" href="/tracks/{{this.id}}">View Tracks</a>
+            </div>
+        </div>
+    {{/each}}
+    </section>
+</main>

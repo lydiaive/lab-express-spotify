@@ -1,0 +1,22 @@
+<main class="layout-main">
+    <h1>Tracks:</h1>
+    <section class="tracklist-container">
+        <table>
+            <tr>
+                <th class="title-length">Title</th>
+                <th>Listen</th>
+            </tr>
+            {{#each trackList}}
+            <tr>
+                <td class="td">{{this.name}}</td>
+                <td class="td">
+                    <audio controls>
+                        <source src="{{this.preview_url}}" type="audio/mpeg">
+                    </audio>
+                </td> 
+            </tr>
+            {{/each}}        
+        </table>
+        <audio src="{{this.0.preview_url}}"></audio>
+    </section>
+</main>
